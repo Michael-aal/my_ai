@@ -1,0 +1,835 @@
+C:\Program Files\4KDownload\4kvideodownloaderplus\4kvideodownloaderplus.exe
+C:\Program Files\4KDownload\4kvideodownloaderplus\crashpad_handler.exe
+C:\Program Files\4KDownload\4kvideodownloaderplus\QtWebEngineProcess.exe
+C:\Program Files\Adobe\Adobe Creative Cloud\ACC\Adobe Crash Processor.exe
+C:\Program Files\Adobe\Adobe Creative Cloud\ACC\Creative Cloud CustomHook.exe
+C:\Program Files\Adobe\Adobe Creative Cloud\ACC\Creative Cloud Helper.exe
+C:\Program Files\Adobe\Adobe Creative Cloud\ACC\Creative Cloud UI Helper.exe
+C:\Program Files\Adobe\Adobe Creative Cloud\ACC\Creative Cloud.exe
+C:\Program Files\Adobe\Adobe Creative Cloud\ACC\CRLogTransport.exe
+C:\Program Files\Adobe\Adobe Creative Cloud\ACC\CRWindowsClientService.exe
+C:\Program Files\Adobe\Adobe Creative Cloud\Diagnostics\Adobe Creative Cloud Diagnostics.exe
+C:\Program Files\BlueStacks_nxt\7zr.exe
+C:\Program Files\BlueStacks_nxt\BlueStacksAppplayerWeb.exe
+C:\Program Files\BlueStacks_nxt\BlueStacksHelper.exe
+C:\Program Files\BlueStacks_nxt\BlueStacksUninstaller.exe
+C:\Program Files\BlueStacks_nxt\BstkSVC.exe
+C:\Program Files\BlueStacks_nxt\BstkVMMgr.exe
+C:\Program Files\BlueStacks_nxt\ffmpeg.exe
+C:\Program Files\BlueStacks_nxt\HD-Aapt.exe
+C:\Program Files\BlueStacks_nxt\HD-Adb.exe
+C:\Program Files\BlueStacks_nxt\HD-CheckCpu.exe
+C:\Program Files\BlueStacks_nxt\HD-ComRegistrar.exe
+C:\Program Files\BlueStacks_nxt\HD-DataManager.exe
+C:\Program Files\BlueStacks_nxt\HD-DiskCompaction.exe
+C:\Program Files\BlueStacks_nxt\HD-DiskFormatCheck.exe
+C:\Program Files\BlueStacks_nxt\HD-EnableHyperV.exe
+C:\Program Files\BlueStacks_nxt\HD-ForceGPU.exe
+C:\Program Files\BlueStacks_nxt\HD-GLCheck.exe
+C:\Program Files\BlueStacks_nxt\HD-Hvutl.exe
+C:\Program Files\BlueStacks_nxt\HD-LogCollector.exe
+C:\Program Files\BlueStacks_nxt\HD-MultiInstanceManager.exe
+C:\Program Files\BlueStacks_nxt\HD-Player.exe
+C:\Program Files\Bonjour\mDNSResponder.exe
+C:\Program Files\Common Files\Adobe\Adobe Desktop Common\ADBox\Set-up.exe
+C:\Program Files\Common Files\Adobe\Adobe Desktop Common\NGL\adobe_licensing_wf.exe
+C:\Program Files\Common Files\Adobe\Adobe Desktop Common\NGL\adobe_licensing_wf_helper.exe
+C:\Program Files\Common Files\Adobe\Adobe Desktop Common\RemoteComponents\LiveType\customehook\uninstall.exe
+C:\Program Files\Common Files\Adobe\Adobe Desktop Common\RemoteComponents\UPI\customhook\UPICustomHook.exe
+C:\Program Files\Common Files\Adobe\Adobe Desktop Common\RemoteComponents\UPI\ExManCoreLib\AdobeExtensionsService.exe
+C:\Program Files\Common Files\Adobe\Adobe Desktop Common\RemoteComponents\UPI\UnifiedPluginInstallerAgent\UnifiedPluginInstallerAgent.exe
+C:\Program Files\Common Files\Apple\Mobile Device Support\AppleMobileDeviceService.exe
+C:\Program Files\Common Files\Corel\Shared\Shell Extension\x64\PropSchemaReg.exe
+C:\Program Files\Common Files\Corel\Shared\Shell Extension\x64\ShellUninst.exe
+C:\Program Files\Common Files\Corel\Shared\Shell Extension\x86\PropSchemaReg.exe
+C:\Program Files\Common Files\microsoft shared\ClickToRun\appvcleaner.exe
+C:\Program Files\Common Files\microsoft shared\ClickToRun\AppVShNotify.exe
+C:\Program Files\Common Files\microsoft shared\ClickToRun\InspectorOfficeGadget.exe
+C:\Program Files\Common Files\microsoft shared\ClickToRun\IntegratedOffice.exe
+C:\Program Files\Common Files\microsoft shared\ClickToRun\MavInject32.exe
+C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeC2RClient.exe
+C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe
+C:\Program Files\Common Files\microsoft shared\ClickToRun\officesvcmgr.exe
+C:\Program Files\Common Files\microsoft shared\ink\TabTip.exe
+C:\Program Files\Common Files\microsoft shared\MSInfo\msinfo32.exe
+C:\Program Files\Common Files\microsoft shared\VSTO\10.0\VSTOInstaller.exe
+C:\Program Files\Common Files\Protexis\License Service\PsiService_2.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Filters64\AsposeConverter.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Filters64\CorelPS2PDF.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\BarCode.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\Cap.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\Capture.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\CdrConv.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\CorelDRW.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\CorelPP.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\CrlUISvr.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\FontManager.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\FontService.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\heif-info.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\heif2rgb.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\InterprocessController.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\IPPInstaller.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\PrintWiz.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Setup\RegisterCGS.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Setup\Setup.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Setup\SetupARP.exe
+C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Setup\MSIs\VSTA\vsta_setup.exe
+C:\Program Files\Git\git-bash.exe
+C:\Program Files\Git\git-cmd.exe
+C:\Program Files\Git\unins000.exe
+C:\Program Files\Git\bin\bash.exe
+C:\Program Files\Git\bin\git.exe
+C:\Program Files\Git\bin\sh.exe
+C:\Program Files\Git\cmd\git-gui.exe
+C:\Program Files\Git\cmd\git-lfs.exe
+C:\Program Files\Git\cmd\git-receive-pack.exe
+C:\Program Files\Git\cmd\git-upload-pack.exe
+C:\Program Files\Git\cmd\git.exe
+C:\Program Files\Git\cmd\gitk.exe
+C:\Program Files\Git\cmd\scalar.exe
+C:\Program Files\Git\cmd\tig.exe
+C:\Program Files\Git\mingw64\bin\adig.exe
+C:\Program Files\Git\mingw64\bin\ahost.exe
+C:\Program Files\Git\mingw64\bin\antiword.exe
+C:\Program Files\Git\mingw64\bin\blocked-file-util.exe
+C:\Program Files\Git\mingw64\bin\brotli.exe
+C:\Program Files\Git\mingw64\bin\bunzip2.exe
+C:\Program Files\Git\mingw64\bin\bzcat.exe
+C:\Program Files\Git\mingw64\bin\bzip2.exe
+C:\Program Files\Git\mingw64\bin\bzip2recover.exe
+C:\Program Files\Git\mingw64\bin\connect.exe
+C:\Program Files\Git\mingw64\bin\create-shortcut.exe
+C:\Program Files\Git\mingw64\bin\curl.exe
+C:\Program Files\Git\mingw64\bin\edit_test.exe
+C:\Program Files\Git\mingw64\bin\edit_test_dll.exe
+C:\Program Files\Git\mingw64\bin\envsubst.exe
+C:\Program Files\Git\mingw64\bin\gettext.exe
+C:\Program Files\Git\mingw64\bin\git-askpass.exe
+C:\Program Files\Git\mingw64\bin\git-askyesno.exe
+C:\Program Files\Git\mingw64\bin\git-credential-helper-selector.exe
+C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+C:\Program Files\Git\mingw64\bin\git-lfs.exe
+C:\Program Files\Git\mingw64\bin\git-receive-pack.exe
+C:\Program Files\Git\mingw64\bin\git-upload-archive.exe
+C:\Program Files\Git\mingw64\bin\git-upload-pack.exe
+C:\Program Files\Git\mingw64\bin\git.exe
+C:\Program Files\Git\mingw64\bin\lzmadec.exe
+C:\Program Files\Git\mingw64\bin\lzmainfo.exe
+C:\Program Files\Git\mingw64\bin\odt2txt.exe
+C:\Program Files\Git\mingw64\bin\openssl.exe
+C:\Program Files\Git\mingw64\bin\p11-kit.exe
+C:\Program Files\Git\mingw64\bin\pdftotext.exe
+C:\Program Files\Git\mingw64\bin\pkcs1-conv.exe
+C:\Program Files\Git\mingw64\bin\printf_gettext.exe
+C:\Program Files\Git\mingw64\bin\printf_ngettext.exe
+C:\Program Files\Git\mingw64\bin\proxy-lookup.exe
+C:\Program Files\Git\mingw64\bin\psl.exe
+C:\Program Files\Git\mingw64\bin\scalar.exe
+C:\Program Files\Git\mingw64\bin\sexp-conv.exe
+C:\Program Files\Git\mingw64\bin\tclsh.exe
+C:\Program Files\Git\mingw64\bin\tclsh86.exe
+C:\Program Files\Git\mingw64\bin\trust.exe
+C:\Program Files\Git\mingw64\bin\unxz.exe
+C:\Program Files\Git\mingw64\bin\WhoUses.exe
+C:\Program Files\Git\mingw64\bin\wintoast.exe
+C:\Program Files\Git\mingw64\bin\wish.exe
+C:\Program Files\Git\mingw64\bin\wish86.exe
+C:\Program Files\Git\mingw64\bin\x86_64-w64-mingw32-agrep.exe
+C:\Program Files\Git\mingw64\bin\xmlwf.exe
+C:\Program Files\Git\mingw64\bin\xz.exe
+C:\Program Files\Git\mingw64\bin\xzcat.exe
+C:\Program Files\Git\mingw64\bin\xzdec.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-credential-wincred.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-daemon.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-http-backend.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-http-fetch.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-http-push.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-imap-send.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-remote-ftp.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-remote-ftps.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-remote-http.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-remote-https.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git-sh-i18n--envsubst.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git.exe
+C:\Program Files\Git\mingw64\libexec\git-core\headless-git.exe
+C:\Program Files\Git\mingw64\libexec\git-core\scalar.exe
+C:\Program Files\Git\mingw64\libexec\p11-kit\p11-kit-remote.exe
+C:\Program Files\Git\mingw64\libexec\p11-kit\p11-kit-server.exe
+C:\Program Files\Git\mingw64\share\git\compat-bash.exe
+C:\Program Files\Git\mingw64\share\git\edit-git-bash.exe
+C:\Program Files\Git\mingw64\share\git\git-wrapper.exe
+C:\Program Files\Git\usr\bin\arch.exe
+C:\Program Files\Git\usr\bin\awk.exe
+C:\Program Files\Git\usr\bin\b2sum.exe
+C:\Program Files\Git\usr\bin\base32.exe
+C:\Program Files\Git\usr\bin\base64.exe
+C:\Program Files\Git\usr\bin\basename.exe
+C:\Program Files\Git\usr\bin\basenc.exe
+C:\Program Files\Git\usr\bin\bash.exe
+C:\Program Files\Git\usr\bin\bunzip2.exe
+C:\Program Files\Git\usr\bin\bzcat.exe
+C:\Program Files\Git\usr\bin\bzip2.exe
+C:\Program Files\Git\usr\bin\bzip2recover.exe
+C:\Program Files\Git\usr\bin\captoinfo.exe
+C:\Program Files\Git\usr\bin\cat.exe
+C:\Program Files\Git\usr\bin\chattr.exe
+C:\Program Files\Git\usr\bin\chcon.exe
+C:\Program Files\Git\usr\bin\chgrp.exe
+C:\Program Files\Git\usr\bin\chmod.exe
+C:\Program Files\Git\usr\bin\chown.exe
+C:\Program Files\Git\usr\bin\chroot.exe
+C:\Program Files\Git\usr\bin\cksum.exe
+C:\Program Files\Git\usr\bin\clear.exe
+C:\Program Files\Git\usr\bin\cmp.exe
+C:\Program Files\Git\usr\bin\column.exe
+C:\Program Files\Git\usr\bin\comm.exe
+C:\Program Files\Git\usr\bin\cp.exe
+C:\Program Files\Git\usr\bin\csplit.exe
+C:\Program Files\Git\usr\bin\cut.exe
+C:\Program Files\Git\usr\bin\cygcheck.exe
+C:\Program Files\Git\usr\bin\cygpath.exe
+C:\Program Files\Git\usr\bin\cygwin-console-helper.exe
+C:\Program Files\Git\usr\bin\d2u.exe
+C:\Program Files\Git\usr\bin\dash.exe
+C:\Program Files\Git\usr\bin\date.exe
+C:\Program Files\Git\usr\bin\dd.exe
+C:\Program Files\Git\usr\bin\df.exe
+C:\Program Files\Git\usr\bin\diff.exe
+C:\Program Files\Git\usr\bin\diff3.exe
+C:\Program Files\Git\usr\bin\dir.exe
+C:\Program Files\Git\usr\bin\dircolors.exe
+C:\Program Files\Git\usr\bin\dirmngr-client.exe
+C:\Program Files\Git\usr\bin\dirmngr.exe
+C:\Program Files\Git\usr\bin\dirname.exe
+C:\Program Files\Git\usr\bin\dos2unix.exe
+C:\Program Files\Git\usr\bin\du.exe
+C:\Program Files\Git\usr\bin\dumpsexp.exe
+C:\Program Files\Git\usr\bin\echo.exe
+C:\Program Files\Git\usr\bin\env.exe
+C:\Program Files\Git\usr\bin\ex.exe
+C:\Program Files\Git\usr\bin\expand.exe
+C:\Program Files\Git\usr\bin\expr.exe
+C:\Program Files\Git\usr\bin\factor.exe
+C:\Program Files\Git\usr\bin\false.exe
+C:\Program Files\Git\usr\bin\file.exe
+C:\Program Files\Git\usr\bin\find.exe
+C:\Program Files\Git\usr\bin\fmt.exe
+C:\Program Files\Git\usr\bin\fold.exe
+C:\Program Files\Git\usr\bin\funzip.exe
+C:\Program Files\Git\usr\bin\gawk-5.3.2.exe
+C:\Program Files\Git\usr\bin\gawk.exe
+C:\Program Files\Git\usr\bin\gencat.exe
+C:\Program Files\Git\usr\bin\getconf.exe
+C:\Program Files\Git\usr\bin\getfacl.exe
+C:\Program Files\Git\usr\bin\getopt.exe
+C:\Program Files\Git\usr\bin\gkill.exe
+C:\Program Files\Git\usr\bin\gmondump.exe
+C:\Program Files\Git\usr\bin\gpg-agent.exe
+C:\Program Files\Git\usr\bin\gpg-card.exe
+C:\Program Files\Git\usr\bin\gpg-connect-agent.exe
+C:\Program Files\Git\usr\bin\gpg-error.exe
+C:\Program Files\Git\usr\bin\gpg-mail-tube.exe
+C:\Program Files\Git\usr\bin\gpg-wks-client.exe
+C:\Program Files\Git\usr\bin\gpg-wks-server.exe
+C:\Program Files\Git\usr\bin\gpg.exe
+C:\Program Files\Git\usr\bin\gpgconf.exe
+C:\Program Files\Git\usr\bin\gpgparsemail.exe
+C:\Program Files\Git\usr\bin\gpgscm.exe
+C:\Program Files\Git\usr\bin\gpgsm.exe
+C:\Program Files\Git\usr\bin\gpgsplit.exe
+C:\Program Files\Git\usr\bin\gpgtar.exe
+C:\Program Files\Git\usr\bin\gpgv.exe
+C:\Program Files\Git\usr\bin\grep.exe
+C:\Program Files\Git\usr\bin\groups.exe
+C:\Program Files\Git\usr\bin\gzip.exe
+C:\Program Files\Git\usr\bin\head.exe
+C:\Program Files\Git\usr\bin\hmac256.exe
+C:\Program Files\Git\usr\bin\hostid.exe
+C:\Program Files\Git\usr\bin\hostname.exe
+C:\Program Files\Git\usr\bin\id.exe
+C:\Program Files\Git\usr\bin\infocmp.exe
+C:\Program Files\Git\usr\bin\infotocap.exe
+C:\Program Files\Git\usr\bin\install.exe
+C:\Program Files\Git\usr\bin\join.exe
+C:\Program Files\Git\usr\bin\kbxutil.exe
+C:\Program Files\Git\usr\bin\kill.exe
+C:\Program Files\Git\usr\bin\ldd.exe
+C:\Program Files\Git\usr\bin\ldh.exe
+C:\Program Files\Git\usr\bin\less.exe
+C:\Program Files\Git\usr\bin\lessecho.exe
+C:\Program Files\Git\usr\bin\lesskey.exe
+C:\Program Files\Git\usr\bin\link.exe
+C:\Program Files\Git\usr\bin\ln.exe
+C:\Program Files\Git\usr\bin\locale.exe
+C:\Program Files\Git\usr\bin\locate.exe
+C:\Program Files\Git\usr\bin\logname.exe
+C:\Program Files\Git\usr\bin\ls.exe
+C:\Program Files\Git\usr\bin\lsattr.exe
+C:\Program Files\Git\usr\bin\mac2unix.exe
+C:\Program Files\Git\usr\bin\md5sum.exe
+C:\Program Files\Git\usr\bin\minidumper.exe
+C:\Program Files\Git\usr\bin\mintty.exe
+C:\Program Files\Git\usr\bin\mkdir.exe
+C:\Program Files\Git\usr\bin\mkfifo.exe
+C:\Program Files\Git\usr\bin\mkgroup.exe
+C:\Program Files\Git\usr\bin\mknod.exe
+C:\Program Files\Git\usr\bin\mkpasswd.exe
+C:\Program Files\Git\usr\bin\mktemp.exe
+C:\Program Files\Git\usr\bin\mount.exe
+C:\Program Files\Git\usr\bin\mpicalc.exe
+C:\Program Files\Git\usr\bin\mv.exe
+C:\Program Files\Git\usr\bin\nano.exe
+C:\Program Files\Git\usr\bin\nettle-hash.exe
+C:\Program Files\Git\usr\bin\nettle-lfib-stream.exe
+C:\Program Files\Git\usr\bin\nettle-pbkdf2.exe
+C:\Program Files\Git\usr\bin\newgrp.exe
+C:\Program Files\Git\usr\bin\nice.exe
+C:\Program Files\Git\usr\bin\nl.exe
+C:\Program Files\Git\usr\bin\nohup.exe
+C:\Program Files\Git\usr\bin\nproc.exe
+C:\Program Files\Git\usr\bin\numfmt.exe
+C:\Program Files\Git\usr\bin\od.exe
+C:\Program Files\Git\usr\bin\openssl.exe
+C:\Program Files\Git\usr\bin\p11-kit.exe
+C:\Program Files\Git\usr\bin\passwd.exe
+C:\Program Files\Git\usr\bin\paste.exe
+C:\Program Files\Git\usr\bin\patch.exe
+C:\Program Files\Git\usr\bin\pathchk.exe
+C:\Program Files\Git\usr\bin\perl.exe
+C:\Program Files\Git\usr\bin\perl5.38.2.exe
+C:\Program Files\Git\usr\bin\pinentry-w32.exe
+C:\Program Files\Git\usr\bin\pinentry.exe
+C:\Program Files\Git\usr\bin\pinky.exe
+C:\Program Files\Git\usr\bin\pkcs1-conv.exe
+C:\Program Files\Git\usr\bin\pldd.exe
+C:\Program Files\Git\usr\bin\pluginviewer.exe
+C:\Program Files\Git\usr\bin\pr.exe
+C:\Program Files\Git\usr\bin\printenv.exe
+C:\Program Files\Git\usr\bin\printf.exe
+C:\Program Files\Git\usr\bin\profiler.exe
+C:\Program Files\Git\usr\bin\ps.exe
+C:\Program Files\Git\usr\bin\psl.exe
+C:\Program Files\Git\usr\bin\ptx.exe
+C:\Program Files\Git\usr\bin\pwd.exe
+C:\Program Files\Git\usr\bin\readlink.exe
+C:\Program Files\Git\usr\bin\realpath.exe
+C:\Program Files\Git\usr\bin\rebase.exe
+C:\Program Files\Git\usr\bin\regtool.exe
+C:\Program Files\Git\usr\bin\reset.exe
+C:\Program Files\Git\usr\bin\rm.exe
+C:\Program Files\Git\usr\bin\rmdir.exe
+C:\Program Files\Git\usr\bin\rnano.exe
+C:\Program Files\Git\usr\bin\runcon.exe
+C:\Program Files\Git\usr\bin\rview.exe
+C:\Program Files\Git\usr\bin\rvim.exe
+C:\Program Files\Git\usr\bin\scp.exe
+C:\Program Files\Git\usr\bin\sdiff.exe
+C:\Program Files\Git\usr\bin\sed.exe
+C:\Program Files\Git\usr\bin\seq.exe
+C:\Program Files\Git\usr\bin\setfacl.exe
+C:\Program Files\Git\usr\bin\setmetamode.exe
+C:\Program Files\Git\usr\bin\sexp-conv.exe
+C:\Program Files\Git\usr\bin\sftp.exe
+C:\Program Files\Git\usr\bin\sh.exe
+C:\Program Files\Git\usr\bin\sha1sum.exe
+C:\Program Files\Git\usr\bin\sha224sum.exe
+C:\Program Files\Git\usr\bin\sha256sum.exe
+C:\Program Files\Git\usr\bin\sha384sum.exe
+C:\Program Files\Git\usr\bin\sha512sum.exe
+C:\Program Files\Git\usr\bin\shred.exe
+C:\Program Files\Git\usr\bin\shuf.exe
+C:\Program Files\Git\usr\bin\sleep.exe
+C:\Program Files\Git\usr\bin\sort.exe
+C:\Program Files\Git\usr\bin\split.exe
+C:\Program Files\Git\usr\bin\ssh-add.exe
+C:\Program Files\Git\usr\bin\ssh-agent.exe
+C:\Program Files\Git\usr\bin\ssh-keygen.exe
+C:\Program Files\Git\usr\bin\ssh-keyscan.exe
+C:\Program Files\Git\usr\bin\ssh-pageant.exe
+C:\Program Files\Git\usr\bin\ssh.exe
+C:\Program Files\Git\usr\bin\ssp.exe
+C:\Program Files\Git\usr\bin\stat.exe
+C:\Program Files\Git\usr\bin\stdbuf.exe
+C:\Program Files\Git\usr\bin\strace.exe
+C:\Program Files\Git\usr\bin\stty.exe
+C:\Program Files\Git\usr\bin\sum.exe
+C:\Program Files\Git\usr\bin\sync.exe
+C:\Program Files\Git\usr\bin\tabs.exe
+C:\Program Files\Git\usr\bin\tac.exe
+C:\Program Files\Git\usr\bin\tail.exe
+C:\Program Files\Git\usr\bin\tar.exe
+C:\Program Files\Git\usr\bin\tee.exe
+C:\Program Files\Git\usr\bin\test.exe
+C:\Program Files\Git\usr\bin\tic.exe
+C:\Program Files\Git\usr\bin\tig.exe
+C:\Program Files\Git\usr\bin\timeout.exe
+C:\Program Files\Git\usr\bin\toe.exe
+C:\Program Files\Git\usr\bin\touch.exe
+C:\Program Files\Git\usr\bin\tput.exe
+C:\Program Files\Git\usr\bin\tr.exe
+C:\Program Files\Git\usr\bin\true.exe
+C:\Program Files\Git\usr\bin\truncate.exe
+C:\Program Files\Git\usr\bin\trust.exe
+C:\Program Files\Git\usr\bin\tset.exe
+C:\Program Files\Git\usr\bin\tsort.exe
+C:\Program Files\Git\usr\bin\tty.exe
+C:\Program Files\Git\usr\bin\tzset.exe
+C:\Program Files\Git\usr\bin\u2d.exe
+C:\Program Files\Git\usr\bin\umount.exe
+C:\Program Files\Git\usr\bin\uname.exe
+C:\Program Files\Git\usr\bin\unexpand.exe
+C:\Program Files\Git\usr\bin\uniq.exe
+C:\Program Files\Git\usr\bin\unix2dos.exe
+C:\Program Files\Git\usr\bin\unix2mac.exe
+C:\Program Files\Git\usr\bin\unlink.exe
+C:\Program Files\Git\usr\bin\unzip.exe
+C:\Program Files\Git\usr\bin\unzipsfx.exe
+C:\Program Files\Git\usr\bin\users.exe
+C:\Program Files\Git\usr\bin\vdir.exe
+C:\Program Files\Git\usr\bin\view.exe
+C:\Program Files\Git\usr\bin\vim.exe
+C:\Program Files\Git\usr\bin\vimdiff.exe
+C:\Program Files\Git\usr\bin\watchgnupg.exe
+C:\Program Files\Git\usr\bin\wc.exe
+C:\Program Files\Git\usr\bin\which.exe
+C:\Program Files\Git\usr\bin\who.exe
+C:\Program Files\Git\usr\bin\whoami.exe
+C:\Program Files\Git\usr\bin\winpty-agent.exe
+C:\Program Files\Git\usr\bin\winpty-debugserver.exe
+C:\Program Files\Git\usr\bin\winpty.exe
+C:\Program Files\Git\usr\bin\xargs.exe
+C:\Program Files\Git\usr\bin\xxd.exe
+C:\Program Files\Git\usr\bin\yat2m.exe
+C:\Program Files\Git\usr\bin\yes.exe
+C:\Program Files\Git\usr\bin\zipinfo.exe
+C:\Program Files\Git\usr\bin\[.exe
+C:\Program Files\Git\usr\lib\awk\grcat.exe
+C:\Program Files\Git\usr\lib\awk\pwcat.exe
+C:\Program Files\Git\usr\lib\gnupg\gpg-auth.exe
+C:\Program Files\Git\usr\lib\gnupg\gpg-check-pattern.exe
+C:\Program Files\Git\usr\lib\gnupg\gpg-pair-tool.exe
+C:\Program Files\Git\usr\lib\gnupg\gpg-preset-passphrase.exe
+C:\Program Files\Git\usr\lib\gnupg\gpg-protect-tool.exe
+C:\Program Files\Git\usr\lib\gnupg\keyboxd.exe
+C:\Program Files\Git\usr\lib\gnupg\scdaemon.exe
+C:\Program Files\Git\usr\lib\ssh\sftp-server.exe
+C:\Program Files\Git\usr\lib\ssh\ssh-keysign.exe
+C:\Program Files\Git\usr\lib\ssh\ssh-pkcs11-helper.exe
+C:\Program Files\Git\usr\lib\ssh\ssh-sk-helper.exe
+C:\Program Files\Git\usr\lib\tar\rmt.exe
+C:\Program Files\Git\usr\libexec\frcode.exe
+C:\Program Files\Git\usr\libexec\getprocaddr32.exe
+C:\Program Files\Git\usr\libexec\getprocaddr64.exe
+C:\Program Files\Git\usr\libexec\p11-kit\p11-kit-remote.exe
+C:\Program Files\Git\usr\libexec\p11-kit\p11-kit-server.exe
+C:\Program Files\Google\Chrome\Application\chrome.exe
+C:\Program Files\Google\Chrome\Application\chrome_proxy.exe
+C:\Program Files\Google\Chrome\Application\146.0.7680.178\chrome_pwa_launcher.exe
+C:\Program Files\Google\Chrome\Application\146.0.7680.178\elevated_tracing_service.exe
+C:\Program Files\Google\Chrome\Application\146.0.7680.178\elevation_service.exe
+C:\Program Files\Google\Chrome\Application\146.0.7680.178\notification_helper.exe
+C:\Program Files\Google\Chrome\Application\146.0.7680.178\os_update_handler.exe
+C:\Program Files\Google\Chrome\Application\146.0.7680.178\Installer\chrmstp.exe
+C:\Program Files\Google\Chrome\Application\146.0.7680.178\Installer\setup.exe
+C:\Program Files\Google\Chrome\Application\PlatformExperienceHelper\platform_experience_helper.exe
+C:\Program Files\Google\Chrome\Temp\scoped_dir14612_1104378044\old_chrome.exe
+C:\Program Files\Internet Explorer\ExtExport.exe
+C:\Program Files\Internet Explorer\iediagcmd.exe
+C:\Program Files\Internet Explorer\ieinstal.exe
+C:\Program Files\Internet Explorer\ielowutil.exe
+C:\Program Files\Internet Explorer\iexplore.exe
+C:\Program Files\iTunes\defaults.exe
+C:\Program Files\iTunes\iTunes.exe
+C:\Program Files\iTunes\iTunesHelper.exe
+C:\Program Files\iTunes\iTunesVisualizerHost.exe
+C:\Program Files\Microsoft GameInput\x64\GameInputRawInputProxy.exe
+C:\Program Files\Microsoft GameInput\x64\GameInputRedistService.exe
+C:\Program Files\Microsoft Office\root\Client\AppVDllSurrogate.exe
+C:\Program Files\Microsoft Office\root\Client\AppVDllSurrogate32.exe
+C:\Program Files\Microsoft Office\root\Client\AppVDllSurrogate64.exe
+C:\Program Files\Microsoft Office\root\Client\AppVLP.exe
+C:\Program Files\Microsoft Office\root\Integration\Integrator.exe
+C:\Program Files\Microsoft Office\root\Office16\excelcnv.exe
+C:\Program Files\Microsoft Office\root\Office16\IEContentService.exe
+C:\Program Files\Microsoft Office\root\Office16\misc.exe
+C:\Program Files\Microsoft Office\root\Office16\msoadfsb.exe
+C:\Program Files\Microsoft Office\root\Office16\msoasb.exe
+C:\Program Files\Microsoft Office\root\Office16\msoev.exe
+C:\Program Files\Microsoft Office\root\Office16\msoia.exe
+C:\Program Files\Microsoft Office\root\Office16\msotd.exe
+C:\Program Files\Microsoft Office\root\Office16\officeappguardwin32.exe
+C:\Program Files\Microsoft Office\root\Office16\PerfBoost.exe
+C:\Program Files\Microsoft Office\root\Office16\protocolhandler.exe
+C:\Program Files\Microsoft Office\root\Office16\SDXHelper.exe
+C:\Program Files\Microsoft Office\root\Office16\SDXHelperBgt.exe
+C:\Program Files\Microsoft Office\root\Office16\Wordconv.exe
+C:\Program Files\Microsoft Office\root\Office16\ADDINS\Microsoft Power Query for Excel Integrated\bin\Microsoft.Mashup.Container.exe
+C:\Program Files\Microsoft Office\root\Office16\ADDINS\Microsoft Power Query for Excel Integrated\bin\Microsoft.Mashup.Container.Loader.exe
+C:\Program Files\Microsoft Office\root\Office16\ADDINS\Microsoft Power Query for Excel Integrated\bin\Microsoft.Mashup.Container.NetFX40.exe
+C:\Program Files\Microsoft Office\root\Office16\ADDINS\Microsoft Power Query for Excel Integrated\bin\Microsoft.Mashup.Container.NetFX45.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\OFFICE16\OLicenseHeartbeat.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\Smart Tag\SmartTagInstall.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\EQUATION\eqnedt32.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesX64\Microsoft Analysis Services\AS OLEDB\140\SQLDumper.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesX86\Microsoft Analysis Services\AS OLEDB\140\SQLDumper.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesX86\Microsoft Office\Office16\AppSharingHookController.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesX86\Microsoft Office\Office16\DCF\Common.DBConnection.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesX86\Microsoft Office\Office16\DCF\Common.DBConnection64.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesX86\Microsoft Office\Office16\DCF\Common.ShowHelp.exe
+C:\Program Files\Microsoft Office\root\vfs\ProgramFilesX86\Microsoft Office\Office16\DCF\filecompare.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\accicons.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\dbcicons.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\grv_icons.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\joticon.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\lyncicon.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\misc.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\ohub32.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\osmadminicon.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\osmclienticon.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\outicon.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\pj11icon.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\pptico.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\pubs.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\sscicons.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\visicon.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\wordicon.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-1000-0000000FF1CE}\xlicons.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-001F-0409-1000-0000000FF1CE}\misc.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-001F-040C-1000-0000000FF1CE}\misc.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-001F-0C0A-1000-0000000FF1CE}\misc.exe
+C:\Program Files\Microsoft Office\root\vfs\Windows\Installer\{90160000-006E-0409-1000-0000000FF1CE}\misc.exe
+C:\Program Files\Microsoft Office 15\ClientX64\IntegratedOffice.exe
+C:\Program Files\Microsoft Office 15\ClientX64\OfficeClickToRun.exe
+C:\Program Files\Microsoft Update Health Tools\expediteupdater.exe
+C:\Program Files\Microsoft Update Health Tools\uhssvc.exe
+C:\Program Files\nodejs\node.exe
+C:\Program Files\ReasonLabs\Common\rsSyncSvc.exe
+C:\Program Files\ReasonLabs\Common\Client\v1.6.0\rsAppUI.exe
+C:\Program Files\ReasonLabs\Common\Stub\v6.2.1\Stub.exe
+C:\Program Files\ReasonLabs\EDR\rsEDRSvc.exe
+C:\Program Files\ReasonLabs\EDR\Uninstall.exe
+C:\Program Files\ReasonLabs\EPP\rsAssistant.exe
+C:\Program Files\ReasonLabs\EPP\rsClientSvc.exe
+C:\Program Files\ReasonLabs\EPP\rsEngineSvc.exe
+C:\Program Files\ReasonLabs\EPP\rsExtensionHost.exe
+C:\Program Files\ReasonLabs\EPP\rsHelper.exe
+C:\Program Files\ReasonLabs\EPP\rsHelper.Mini.exe
+C:\Program Files\ReasonLabs\EPP\rsLitmus.A.exe
+C:\Program Files\ReasonLabs\EPP\rsLitmus.S.exe
+C:\Program Files\ReasonLabs\EPP\rsRemediation.exe
+C:\Program Files\ReasonLabs\EPP\rsWSC.exe
+C:\Program Files\ReasonLabs\EPP\Uninstall.exe
+C:\Program Files\ReasonLabs\EPP\ui\EPP.exe
+C:\Program Files\RUXIM\DTUDriver.exe
+C:\Program Files\RUXIM\PLUGScheduler.exe
+C:\Program Files\RUXIM\RUXIMICS.exe
+C:\Program Files\RUXIM\RUXIMIH.exe
+C:\Program Files\Samsung\USB Drivers\Uninstall.exe
+C:\Program Files\Samsung\USB Drivers\27_ssconn\conn\ss_conn_service.exe
+C:\Program Files\Samsung\USB Drivers\28_ssconn2\conn\ss_conn_service2.exe
+C:\Program Files\VideoLAN\VLC\uninstall.exe
+C:\Program Files\VideoLAN\VLC\vlc-cache-gen.exe
+C:\Program Files\VideoLAN\VLC\vlc.exe
+C:\Program Files\VirtualDJ\virtualdj.exe
+C:\Program Files\Windows Defender\ConfigSecurityPolicy.exe
+C:\Program Files\Windows Defender\DlpUserAgent.exe
+C:\Program Files\Windows Defender\MipDlp.exe
+C:\Program Files\Windows Defender\MpCmdRun.exe
+C:\Program Files\Windows Defender\MpCopyAccelerator.exe
+C:\Program Files\Windows Defender\MpDefenderCoreService.exe
+C:\Program Files\Windows Defender\MpDlpCmd.exe
+C:\Program Files\Windows Defender\MpDlpService.exe
+C:\Program Files\Windows Defender\mpextms.exe
+C:\Program Files\Windows Defender\MsMpEng.exe
+C:\Program Files\Windows Defender\NisSrv.exe
+C:\Program Files\Windows Defender\Offline\OfflineScannerShell.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseAP.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseAPToast.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseDlpProcessor.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseDlpService.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseGPParser.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseIdentity.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseImdsCollector.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseNAS.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseNdr.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseTracer.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\SenseTVM.exe
+C:\Program Files\Windows Defender Advanced Threat Protection\Classification\SenseCE.exe
+C:\Program Files\Windows Mail\wab.exe
+C:\Program Files\Windows Mail\wabmig.exe
+C:\Program Files\Windows Media Player\setup_wm.exe
+C:\Program Files\Windows Media Player\wmlaunch.exe
+C:\Program Files\Windows Media Player\wmpconfig.exe
+C:\Program Files\Windows Media Player\wmplayer.exe
+C:\Program Files\Windows Media Player\wmpnetwk.exe
+C:\Program Files\Windows Media Player\wmpnscfg.exe
+C:\Program Files\Windows Media Player\wmprph.exe
+C:\Program Files\Windows Media Player\wmpshare.exe
+C:\Program Files\Windows Photo Viewer\ImagingDevices.exe
+C:\Program Files\WinRAR\Rar.exe
+C:\Program Files\WinRAR\Uninstall.exe
+C:\Program Files\WinRAR\UnRAR.exe
+C:\Program Files\WinRAR\WinRAR.exe
+C:\Program Files (x86)\3uToolsV3\x86\3uTools.exe
+C:\Program Files (x86)\3uToolsV3\x86\3uViewer.exe
+C:\Program Files (x86)\3uToolsV3\x86\CrashReport.exe
+C:\Program Files (x86)\3uToolsV3\x86\QEdgWebCore.exe
+C:\Program Files (x86)\3uToolsV3\x86\QtWebEngineProcess.exe
+C:\Program Files (x86)\3uToolsV3\x86\Uninstall.exe
+C:\Program Files (x86)\3uToolsV3\x86\updater.exe
+C:\Program Files (x86)\3uToolsV3\x86\cache\update_temp\3uTools.exe
+C:\Program Files (x86)\3uToolsV3\x86\files\inf\InfInstallerx64.exe
+C:\Program Files (x86)\3uToolsV3\x86\files\inf\InfInstallerx86.exe
+C:\Program Files (x86)\3uToolsV3\x86\files\Openhiddenncm\InfInstallerx64.exe
+C:\Program Files (x86)\3uToolsV3\x86\files\Openhiddenncm\Openhiddenncm.exe
+C:\Program Files (x86)\3uToolsV3\x86\files\patchtools\7z-32\7z.exe
+C:\Program Files (x86)\3uToolsV3\x86\files\patchtools\7z-64\7z.exe
+C:\Program Files (x86)\3uToolsV3\x86\iCloudDll\libp12loader.exe
+C:\Program Files (x86)\3uToolsV3\x86\itunesFlashDll\iTunesFlash.exe
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\ACC\Creative Cloud.exe
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\AdobeGenuineValidator.exe
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\Creative Cloud Desktop App.exe
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\Creative Cloud Uninstall Helper.exe
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\Creative Cloud Uninstaller.exe
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\CreativeCloudSet-Up.exe
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\TQCacheCleaner.exe
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\zip\7za.exe
+C:\Program Files (x86)\Apple Software Update\SoftwareUpdate.exe
+C:\Program Files (x86)\BlueStacks X\7z.exe
+C:\Program Files (x86)\BlueStacks X\BlueStacks X.exe
+C:\Program Files (x86)\BlueStacks X\BlueStacksWeb.exe
+C:\Program Files (x86)\BlueStacks X\BlueStacksXUninstaller.exe
+C:\Program Files (x86)\BlueStacks X\Marketplace.exe
+C:\Program Files (x86)\Bonjour\mDNSResponder.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ADCUtils\CC Troubleshooter.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\AdobeGenuineClient\AGSService.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\AdobeGenuineClient\customhook\gccustomhook.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ADS\Adobe Crash Processor.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ADS\Adobe Desktop Service.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ADS\CRLogTransport.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ADS\CRWindowsClientService.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ADS\customHook\ADSCustomHook.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\DEBox\PlatformUtil.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\DEBox\Setup.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\DEBox\DE6\resources\libraries\Adobe_Helperx32.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\DEBox\DE6\resources\libraries\Adobe_Helperx64.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\DEBox\DE6\resources\libraries\CustomHook_Helperx64.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\DEBox\DE6\resources\libraries\TokenResolverx64.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ElevationManager\Adobe Installer.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ElevationManager\AdobeServiceInstaller.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\ElevationManager\AdobeUpdateService.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\FilesPanel\FilesAppCustomHook.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\Adobe Update Helper.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\CRLogTransport.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\CRWindowsClientService.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\HDHelper.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\Set-up.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\Setup.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\TokenResolverx64.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\Uninstaller.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HDBox\customhook\HDCoreCustomHook.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\IPCBox\AdobeIPCBroker.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\IPCBox\CRLogTransport.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\IPCBox\CRWindowsClientService.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\IPCBox\customhook\AdobeIPCBrokerCustomHook.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\LCC\adobe_licensing_helper.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\Runtime\customhook\RuntimeCustomHook.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\Runtime\customhook\vc14\32bit\vcredist_x86.exe
+C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\Runtime\customhook\vc14\64bit\vcredist_x64.exe
+C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\IPC\AdobeIPCBroker.exe
+C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\IPC\customhook\AdobeIPCBrokerCustomHook.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\AppleMobileBackup.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\AppleMobileDeviceHelper.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\AppleMobileSync.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\AppleSyncMapiInterfaceHelper_x64.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\com.apple.IE.client.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\com.apple.Outlook.client.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\com.apple.Safari.client.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\com.apple.WindowsContacts.client.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\com.apple.WindowsMail.client.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\distnoted.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\MDCrashReportTool.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\Mingler.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\SyncDiagnostics.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\syncli.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\SyncPlanObserver.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\SyncServer.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\SyncUIHandler.exe
+C:\Program Files (x86)\Common Files\Apple\Mobile Device Support\upgradedb.exe
+C:\Program Files (x86)\Common Files\Microsoft Shared\ink\pipanel.exe
+C:\Program Files (x86)\Common Files\Microsoft Shared\ink\TabTip32.exe
+C:\Program Files (x86)\Common Files\Microsoft Shared\MSInfo\msinfo32.exe
+C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\10.0\VSTOInstaller.exe
+C:\Program Files (x86)\Common Files\Protexis\License Service\PsiService_2.exe
+C:\Program Files (x86)\Corel\CUH\v2\dimchain.exe
+C:\Program Files (x86)\Corel\CUH\v2\x64\PCUClientBridge.exe
+C:\Program Files (x86)\dotnet\dotnet.exe
+C:\Program Files (x86)\Google\GoogleUpdater\141.0.7340.0\updater.exe
+C:\Program Files (x86)\Google\GoogleUpdater\148.0.7730.0\updater.exe
+C:\Program Files (x86)\Google\Update\GoogleUpdate.exe
+C:\Program Files (x86)\gs\gs8.64\GPLUninst.exe
+C:\Program Files (x86)\gs\gs8.64\bin\gswin32.exe
+C:\Program Files (x86)\gs\gs8.64\bin\gswin32c.exe
+C:\Program Files (x86)\InstallShield Installation Information\{74FA5314-85C8-4E2A-907D-D9ECCCB770A7}\setup.exe
+C:\Program Files (x86)\Internet Explorer\ExtExport.exe
+C:\Program Files (x86)\Internet Explorer\ieinstal.exe
+C:\Program Files (x86)\Internet Explorer\ielowutil.exe
+C:\Program Files (x86)\Internet Explorer\iexplore.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\new_edge_proxy.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\new_msedge.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\new_pwahelper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\pwahelper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\cookie_exporter.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\elevated_tracing_service.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\elevation_service.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\identity_helper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\mscopilot.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\msedge.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\msedgewebview2.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\msedge_proxy.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\msedge_pwa_launcher.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\notification_click_helper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\notification_helper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\passkey_authenticator_plugin.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\pwahelper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\BHO\ie_to_edge_stub.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\Installer\copilot_setup.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.84\Installer\setup.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\cookie_exporter.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\elevated_tracing_service.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\elevation_service.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\identity_helper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\mscopilot.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\msedge.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\msedgewebview2.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\msedge_proxy.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\msedge_pwa_launcher.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\notification_click_helper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\notification_helper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\passkey_authenticator_plugin.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\pwahelper.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\BHO\ie_to_edge_stub.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\Installer\copilot_setup.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\146.0.3856.97\Installer\setup.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\cookie_exporter.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\elevated_tracing_service.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\elevation_service.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\identity_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\mscopilot.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\msedge.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\msedgewebview2.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\msedge_proxy.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\msedge_pwa_launcher.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\notification_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\pwahelper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\BHO\ie_to_edge_stub.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\Installer\copilot_setup.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.84\Installer\setup.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\cookie_exporter.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\elevated_tracing_service.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\elevation_service.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\identity_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\mscopilot.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\msedge.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\msedgewebview2.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\msedge_proxy.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\msedge_pwa_launcher.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\notification_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\pwahelper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\BHO\ie_to_edge_stub.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\Installer\copilot_setup.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\146.0.3856.97\Installer\setup.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\cookie_exporter.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\elevated_tracing_service.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\elevation_service.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\identity_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\mscopilot.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\msedge.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\msedgewebview2.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\msedge_proxy.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\msedge_pwa_launcher.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\notification_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\pwahelper.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\BHO\ie_to_edge_stub.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\Installer\copilot_setup.exe
+C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\Installer\setup.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\CopilotUpdate.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\1.3.225.7\CopilotUpdate.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\1.3.225.7\MicrosoftEdgeComRegisterShellARM64.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\1.3.225.7\MicrosoftEdgeUpdate.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\1.3.225.7\MicrosoftEdgeUpdateBroker.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\1.3.225.7\MicrosoftEdgeUpdateComRegisterShell64.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\1.3.225.7\MicrosoftEdgeUpdateCore.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\1.3.225.7\MicrosoftEdgeUpdateOnDemand.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\1.3.225.7\MicrosoftEdgeUpdateSetup.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\Download\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}\146.0.3856.97\MicrosoftEdge_X64_146.0.3856.97_146.0.3856.84.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\Download\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}\146.0.3856.97\MicrosoftEdge_X64_146.0.3856.97_146.0.3856.84.exe
+C:\Program Files (x86)\Microsoft\EdgeUpdate\Download\{F3C4FE00-EFD5-403B-9569-398A20F1BA4A}\1.3.225.7\MicrosoftEdgeUpdateSetup_X86_1.3.225.7.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\cookie_exporter.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\elevated_tracing_service.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\elevation_service.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\identity_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\mscopilot.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\msedge.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\msedgewebview2.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\msedge_proxy.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\msedge_pwa_launcher.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\notification_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\pwahelper.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\BHO\ie_to_edge_stub.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\Installer\copilot_setup.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.84\Installer\setup.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\cookie_exporter.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\elevated_tracing_service.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\elevation_service.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\identity_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\mscopilot.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\msedge.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\msedgewebview2.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\msedge_proxy.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\msedge_pwa_launcher.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\notification_helper.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\pwahelper.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\BHO\ie_to_edge_stub.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\Installer\copilot_setup.exe
+C:\Program Files (x86)\Microsoft\EdgeWebView\Application\146.0.3856.97\Installer\setup.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\AdminDelegator_SmartSwitch.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\AgentInstaller.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\AgentUpdate.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\ErrorReport.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\LauncherSmartSwitchPDLR.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\NTMsg.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\SmartSwitchPC.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\SmartSwitchPDLR.exe
+C:\Program Files (x86)\Samsung\Smart Switch PC\SmartSwitchUpdateClient.exe
+C:\Program Files (x86)\Samsung\SmartSwitchSupportFiles\Execute2App.exe
+C:\Program Files (x86)\Samsung\SmartSwitchSupportFiles\Kies3RemoveAll.exe
+C:\Program Files (x86)\Samsung\SmartSwitchSupportFiles\Setup1.exe
+C:\Program Files (x86)\Samsung\SmartSwitchSupportFiles\WriteDescExecuteFileName.exe
+C:\Program Files (x86)\SMADAV\Smadav-Updater.exe
+C:\Program Files (x86)\SMADAV\SmadavHelper.exe
+C:\Program Files (x86)\SMADAV\SmadavProtect32.exe
+C:\Program Files (x86)\SMADAV\SmadavProtect64.exe
+C:\Program Files (x86)\SMADAV\SmadavSecondaryUpdater.exe
+C:\Program Files (x86)\SMADAV\SMΔRTP.exe
+C:\Program Files (x86)\SMADAV\unins000.exe
+C:\Program Files (x86)\VideoLAN\VLC\uninstall.exe
+C:\Program Files (x86)\VideoLAN\VLC\vlc-cache-gen.exe
+C:\Program Files (x86)\VideoLAN\VLC\vlc.exe
+C:\Program Files (x86)\Windows Defender\MpCmdRun.exe
+C:\Program Files (x86)\Windows Mail\wab.exe
+C:\Program Files (x86)\Windows Mail\wabmig.exe
+C:\Program Files (x86)\Windows Media Player\setup_wm.exe
+C:\Program Files (x86)\Windows Media Player\wmlaunch.exe
+C:\Program Files (x86)\Windows Media Player\wmpconfig.exe
+C:\Program Files (x86)\Windows Media Player\wmplayer.exe
+C:\Program Files (x86)\Windows Media Player\wmprph.exe
+C:\Program Files (x86)\Windows Media Player\wmpshare.exe
+C:\Program Files (x86)\Windows Photo Viewer\ImagingDevices.exe

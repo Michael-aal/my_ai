@@ -1,0 +1,13 @@
+{
+  "chrome": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "edge": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+  "notepad": "notepad.exe",
+  "calculator": "calc.exe",
+  "paint": "mspaint.exe",
+
+  "vscode": "C:\\Users\\austi\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+
+  "whatsapp": "https://web.whatsapp.com",
+
+  "telegram": "C:\\Users\\austi\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe"
+}
