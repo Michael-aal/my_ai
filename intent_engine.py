@@ -1,139 +1,281 @@
-def detect_intent(text):
+"""
+Layer 1 — The ears.
+Converts raw text into structured intent dict.
+"""
 
-    text = text.lower().strip()
+import re
 
-    # -----------------------------
-    # WHATSAPP AUTOMATION
-    # -----------------------------
-    if "send message to" in text:
+# ─────────────────────────────────────────
+# HELPERS
+# ─────────────────────────────────────────
 
-        parts = text.replace("send message to", "").strip().split(" ", 1)
+def _is_url(token: str) -> bool:
+    if not token:
+        return False
 
-        if len(parts) < 2:
+    pattern = re.compile(
+        r"^(https?://)?"
+        r"([\w\-]+\.)+[a-z]{2,}"
+        r"(/[\w\-._~:/?#\[\]@!$&'()*+,;=%]*)?$",
+        re.IGNORECASE,
+    )
+    return bool(pattern.match(token.strip()))
+
+def _normalize_app_name(raw: str) -> str:
+    if not raw:
+        return ""
+
+    raw = raw.lower().strip()
+
+    aliases = {
+        "google chrome": "chrome",
+        "chrome": "chrome",
+        "microsoft edge": "edge",
+        "edge": "edge",
+        "firefox": "firefox",
+        "vlc": "vlc",
+        "vlc media player": "vlc",
+        "visual studio code": "vscode",
+        "vs code": "vscode",
+        "vscode": "vscode",
+        "notepad": "notepad",
+        "file explorer": "explorer",
+        "explorer": "explorer",
+        "calculator": "calc",
+        "task manager": "taskmgr",
+        "cmd": "cmd",
+        "command prompt": "cmd",
+        "paint": "mspaint",
+        "spotify": "spotify",
+        "whatsapp": "whatsapp",
+    }
+
+    return aliases.get(raw, raw)
+
+def _clean(text: str) -> str:
+    return text.strip().lower()
+
+# ─────────────────────────────────────────
+# STRICT SYSTEM INTENT MATCHES (MULTI-PHRASE)
+# (prevents random misclassification like RAM bug)
+# ─────────────────────────────────────────
+
+SYSTEM_MAP = {
+    "query_ram": [
+        "ram",
+        "check ram",
+        "check ram usage",
+        "memory usage",
+        "how much memory",
+        "what is the ram"
+    ],
+    "query_time": [
+        "time",
+        "what time is it",
+        "current time",
+        "tell me the time"
+    ],
+    "query_date": [
+        "date",
+        "what is the date",
+        "today date",
+        "what day is it"
+    ],
+    "shutdown": [
+        "shutdown",
+        "turn off pc",
+        "off the laptop",
+        "power off",
+        "shut down",
+        "switch off computer",
+        "exit computer"
+    ],
+    "restart": [
+        "restart",
+        "reboot pc",
+        "reboot computer",
+        "restart laptop",
+        "turn on again"
+    ],
+    "sleep": [
+        "sleep",
+        "go to sleep",
+        "hibernate",
+        "put the computer to sleep"
+    ],
+    "lock": [
+        "lock",
+        "lock screen",
+        "secure the computer",
+        "close screen"
+    ],
+    "mute": [
+        "mute",
+        "turn off sound",
+        "silence audio",
+        "no sound"
+    ],
+    "unmute": [
+        "unmute",
+        "turn on sound",
+        "sound on",
+        "restore audio"
+    ],
+    "volume_up": [
+        "volume up",
+        "increase volume",
+        "louder",
+        "turn up volume",
+        "raise volume"
+    ],
+    "volume_down": [
+        "volume down",
+        "decrease volume",
+        "quieter",
+        "turn down volume",
+        "lower volume"
+    ],
+    "screenshot": [
+        "screenshot",
+        "take screenshot",
+        "capture screen",
+        "print screen"
+    ],
+    "exit": [
+        "exit",
+        "stop jarvis",
+        "quit jarvis",
+        "close assistant",
+        "end session"
+    ],
+}
+
+def _match_strict(text: str) -> dict:
+    for intent, phrases in SYSTEM_MAP.items():
+        if text in phrases:
+            return {"intent": intent}
+    return None
+
+# ─────────────────────────────────────────
+# MAIN PARSER
+# ─────────────────────────────────────────
+
+def detect_intent(text: str) -> dict:
+    if not text or not isinstance(text, str):
+        return {"intent": "ask_claude", "text": ""}
+
+    original = text.strip()
+    text = _clean(text)
+
+    # ─────────────────────────────────────────
+    # 0. STRICT SYSTEM MATCH (FIXES YOUR BUG)
+    # ─────────────────────────────────────────
+    strict = _match_strict(text)
+    if strict:
+        return strict
+
+    # ─────────────────────────────────────────
+    # 1. MEMORY
+    # ─────────────────────────────────────────
+
+    m = re.match(r"remember (.+?) is (.+)", text)
+    if m:
+        return {
+            "intent": "memory_save",
+            "key": m.group(1).strip(),
+            "value": m.group(2).strip()
+        }
+
+    if text.startswith("what is "):
+        return {
+            "intent": "memory_recall",
+            "key": text.replace("what is ", "").strip()
+        }
+
+    if text == "show memory":
+        return {"intent": "memory_show"}
+
+    # ─────────────────────────────────────────
+    # 2. WHATSAPP
+    # ─────────────────────────────────────────
+
+    wa_patterns = [
+        r"send (?:a )?(?:whatsapp )?message to (\w+)\s+(.+)",
+        r"whatsapp (\w+) (?:saying|say)\s+(.+)",
+        r"message (\w+) (?:on whatsapp\s+)?(.+)",
+    ]
+
+    for pat in wa_patterns:
+        m = re.match(pat, text)
+        if m:
             return {
-                "tool": "fallback",
-                "params": {"text": text}
+                "intent": "send_whatsapp",
+                "name": m.group(1).strip(),
+                "message": m.group(2).strip(),
             }
 
-        name = parts[0]
-        message = parts[1]
+    # ─────────────────────────────────────────
+    # 3. URL OPEN
+    # ─────────────────────────────────────────
 
-        return {
-            "tool": "send_whatsapp",
-            "params": {
-                "name": name,
-                "message": message
+    url_prefixes = ("open ", "go to ", "visit ", "browse ", "navigate to ")
+
+    for prefix in url_prefixes:
+        if text.startswith(prefix):
+            candidate = text[len(prefix):].strip()
+
+            if _is_url(candidate):
+                url = candidate if candidate.startswith("http") else "https://" + candidate
+                return {"intent": "open_url", "url": url}
+
+    if _is_url(text):
+        url = text if text.startswith("http") else "https://" + text
+        return {"intent": "open_url", "url": url}
+
+    # ─────────────────────────────────────────
+    # 4. APP CONTROL
+    # ─────────────────────────────────────────
+
+    for prefix in ("open ", "launch ", "start ", "run "):
+        if text.startswith(prefix):
+            app = text[len(prefix):].strip()
+            return {
+                "intent": "open_app",
+                "app": _normalize_app_name(app),
             }
-        }
 
-    # -----------------------------
-    # OPEN APPLICATION
-    # -----------------------------
-    if text.startswith("open "):
+    for prefix in ("close ", "kill ", "quit ", "exit ", "stop "):
+        if text.startswith(prefix):
+            app = text[len(prefix):].strip()
+            return {
+                "intent": "close_app",
+                "app": _normalize_app_name(app),
+            }
 
-        app_name = text.replace("open ", "").strip()
+    # ─────────────────────────────────────────
+    # 5. SEARCH
+    # ─────────────────────────────────────────
 
-        return {
-            "tool": "open_app",
-            "params": {"name": app_name}
-        }
+    for prefix in ("search ", "google ", "look up ", "find "):
+        if text.startswith(prefix):
+            query = text[len(prefix):].strip()
+            return {
+                "intent": "open_url",
+                "url": f"https://www.google.com/search?q={query.replace(' ', '+')}"
+            }
 
-    # -----------------------------
-    # CLOSE APPLICATION
-    # -----------------------------
-    if text.startswith("close "):
+    # ─────────────────────────────────────────
+    # 6. EXIT
+    # ─────────────────────────────────────────
 
-        app_name = text.replace("close ", "").strip()
+    if text in ("exit", "stop jarvis", "quit jarvis"):
+        return {"intent": "exit"}
 
-        return {
-            "tool": "close_app",
-            "params": {"name": app_name}
-        }
+    # ─────────────────────────────────────────
+    # 7. FALLBACK AI
+    # ─────────────────────────────────────────
 
-    # -----------------------------
-    # WEB SEARCH
-    # -----------------------------
-    if text.startswith("search "):
-
-        query = text.replace("search ", "").strip()
-
-        return {
-            "tool": "search_web",
-            "params": {"query": query}
-        }
-
-    # -----------------------------
-    # CREATE FILE
-    # -----------------------------
-    if text.startswith("create file "):
-
-        filename = text.replace("create file ", "").strip()
-
-        return {
-            "tool": "create_file",
-            "params": {"filename": filename}
-        }
-
-    # -----------------------------
-    # DELETE FILE
-    # -----------------------------
-    if text.startswith("delete file "):
-
-        filename = text.replace("delete file ", "").strip()
-
-        return {
-            "tool": "delete_file",
-            "params": {"filename": filename}
-        }
-
-    # -----------------------------
-    # MEMORY STORE
-    # -----------------------------
-    if text.startswith("remember "):
-
-        content = text.replace("remember ", "").strip()
-
-        return {
-            "tool": "remember",
-            "params": {"content": content}
-        }
-
-    # -----------------------------
-    # MEMORY RECALL
-    # -----------------------------
-    if text.startswith("what is my"):
-
-        key = text.replace("what is my", "").strip()
-
-        return {
-            "tool": "recall",
-            "params": {"key": key}
-        }
-
-    # -----------------------------
-    # SYSTEM SHUTDOWN
-    # -----------------------------
-    if "shutdown" in text:
-
-        return {
-            "tool": "shutdown",
-            "params": {}
-        }
-
-    # -----------------------------
-    # SYSTEM RESTART
-    # -----------------------------
-    if "restart" in text:
-
-        return {
-            "tool": "restart",
-            "params": {}
-        }
-
-    # -----------------------------
-    # FALLBACK (AI RESPONSE)
-    # -----------------------------
     return {
-        "tool": "fallback",
-        "params": {"text": text}
+        "intent": "ask_claude",
+        "text": original
     }

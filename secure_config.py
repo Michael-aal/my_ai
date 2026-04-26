@@ -1,21 +1,7 @@
-ASSISTANT_NAME = "jarvis"
-
-WAKE_WORD = "jarvis"
-
-MODEL_NAME = "base"
-
-VOICE_RATE = 180
-
-MIC_DURATION = 3
-
-
-
-
-
 import os
 from Encryptor import encrypt, decrypt
 
-SECRET_FILE = "storage/.secret"
+SECRET_FILE = "storage/.key"
 
 
 class SecureConfig:

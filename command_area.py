@@ -1,6 +1,37 @@
-def parse_command(command):
+def normalize_command(text):
 
-    c = command.lower().strip()
+    if not text:
+        return ""
+
+    c = text.lower().strip()
+
+    replacements = {
+
+        "shut down": "shutdown",
+        "shut-down": "shutdown",
+
+        "un mute": "unmute",
+        "un-mute": "unmute",
+
+        "turn off volume": "volume down",
+        "lower volume": "volume down",
+
+        "turn up volume": "volume up",
+        "increase volume": "volume up",
+    }
+
+    for key, value in replacements.items():
+        c = c.replace(key, value)
+
+    return c
+
+
+def parse_command(command):
+    if not command or not command.strip():
+        return None  # Ensure we don’t proceed with an empty command
+
+    # c = command.lower().strip()
+    c = normalize_command(command)
 
     if c.startswith("open "):
         return {"type": "open_app", "target": c.replace("open ", "")}
@@ -30,40 +61,29 @@ def parse_command(command):
         return {"type": "unmute"}
     
     if "open whatsapp" in c:
-       return {"type": "open_whatsapp"}
+        return {"type": "open_whatsapp"}
+    
+    if "shutdown" in c:
+        return {"type": "shutdown_pc"}
+
+    if "sleep" in c:
+        return {"type": "sleep_pc"}    
+
+    if "lock" in c:
+        return {"type": "lock_pc"}  
+      
+    if "restart" in c:
+        return {"type": "restart_pc"}
    
-    if "send whatsapp" in c:
-
-      text = c.replace("send whatsapp", "").strip()
-      parts = text.split(" ", 1)
-
-      if len(parts) < 2:
-              return None
-
-      return {
-            "type": "send_whatsapp",
+    if "send message" in c:
+        text = c.replace("send message", "").strip()
+        parts = text.split(" ", 1)
+        if len(parts) < 2:
+            return None
+        return {
+            "type": "send_message",
             "target": parts[0],
             "message": parts[1]
         }
 
     return None
-
-
-def open_app(name):
-    import os, webbrowser
-
-    apps = load_apps()
-    name = name.lower()
-
-    if name in apps:
-        path = apps[name]
-
-        if path.startswith("http"):
-            webbrowser.open(path)
-        else:
-            os.startfile(path)
-
-        return f"Opening {name}"
-
-    os.system(f"start {name}")
-    return f"Tried opening {name}"

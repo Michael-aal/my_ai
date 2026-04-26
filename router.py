@@ -1,61 +1,141 @@
-from command_area import parse_command
+from listener import record_utterance, transcribe, contains_wake_word, strip_wake_word
+from intent_engine import detect_intent
 from action_engine import perform_action
-from ai_engine import get_ai_response
-from voice import speak
+from voice import speak, is_speaking
+from database import set_info, get_info, get_all_info
+from permissions import prompt_first_run
+
+import traceback
+
+WAKE_WORD_MODE = True
+active = False
+DEBUG = True
 
 
+# ─────────────────────────────────────────
+# MEMORY SYSTEM
+# ─────────────────────────────────────────
+def memory_commands(text):
+    text = text.lower().strip()
+
+    # STORE MEMORY
+    if text.startswith("remember"):
+        try:
+            clean = text.replace("remember", "").strip()
+            key, value = clean.split(" is ")
+            set_info(key.strip(), value.strip())
+            return f"Saved {key}"
+
+        except Exception:
+            return "I did not understand"
+
+    # RETRIEVE MEMORY
+    if text.startswith("what is"):
+        key = text.replace("what is", "").strip()
+        value = get_info(key)
+        return value if value else "No data found"
+
+    # SHOW ALL MEMORY
+    if "show memory" in text:
+        return str(get_all_info())
+
+    return None
+
+
+# ─────────────────────────────────────────
+# MAIN LOOP
+# ─────────────────────────────────────────
 def run_assistant():
+    global active
+
+    prompt_first_run()  # First-time permission prompt
+
+    print("Jarvis ready... Listening")
 
     while True:
-
         try:
-
-            user_input = input("You: ").strip()
-
-            if not user_input:
+            # ── BLOCK DURING SPEECH ───────────────
+            if is_speaking():
                 continue
 
-            if user_input.lower() in ["exit", "quit"]:
-                print("Jarvis: Goodbye")
-                speak("Goodbye")
-                break
+            if DEBUG:
+                print("\n[WAITING FOR SPEECH]")
 
-            action = parse_command(user_input)
+            audio = record_utterance()
 
-            if action:
+            if audio is None:
+                if DEBUG:
+                    print("[NO AUDIO CAPTURED]")
+                continue
 
-                speakRes(action)
+            # ── TRANSCRIPTION ─────────────────────
+            if DEBUG:
+                print("[TRANSCRIBING...]")
 
-            else:
+            text = transcribe(audio)
 
-                response = get_ai_response(user_input)
+            if DEBUG:
+                print("RAW TEXT:", text)
 
-                print("Jarvis:", response)
+            # ── HARD FAIL SAFE ────────────────────
+            if not text or not isinstance(text, str) or not text.strip():
+                if DEBUG:
+                    print("[INVALID TRANSCRIPTION]")
+                continue
 
-                speak(response)
+            text = text.lower().strip()
 
-        except Exception as error:
+            # ── WAKE WORD SYSTEM ───────────────────
+            if WAKE_WORD_MODE:
+                if not active:
+                    if contains_wake_word(text):
+                        active = True
+                        speak("Yes. I am listening.")
+                    continue
 
-            error_message = f"An error occurred: {str(error)}"
+            # REMOVE WAKE WORD
+            text = strip_wake_word(text)
 
-            print("Jarvis:", error_message)
+            # ── SLEEP COMMAND ─────────────────────
+            if any(x in text for x in ["go to sleep", "bye", "dismiss"]):
+                active = False
+                speak("Going offline")
+                continue
 
-            speak(error_message)
+            # ── MEMORY FAST PATH ──────────────────
+            memory_response = memory_commands(text)
 
+            if memory_response:
+                print("Jarvis:", memory_response)
+                speak(memory_response)
+                continue
 
-def speakRes(action):
+            # ── INTENT ENGINE ─────────────────────
+            if DEBUG:
+                print("[DETECTING INTENT...]")
 
-    result = perform_action(action)
+            intent = detect_intent(text)
 
-    print("DEBUG ACTION:", action)
+            if DEBUG:
+                print("INTENT:", intent)
 
-    print("Jarvis:", result)
+            # HARD VALIDATION
+            if not isinstance(intent, dict) or "intent" not in intent:
+                speak("I could not understand the command")
+                continue
 
-    if result:
+            # ── ACTION ENGINE ─────────────────────
+            output = perform_action(intent)
 
-        speak(result)
+            if DEBUG:
+                print("OUTPUT:", output)
 
-    else:
+            if not output:
+                output = "I did not get that"
 
-        speak("Command executed")
-        
+            speak(output)
+
+        except Exception as e:
+            traceback.print_exc()
+            print("Router Error:", e)
+            speak("System error occurred")

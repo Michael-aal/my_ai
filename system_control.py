@@ -1,19 +1,20 @@
 from pycaw.pycaw import AudioUtilities
 
+import os
 
 def get_volume_interface():
     devices = AudioUtilities.GetSpeakers()
     return devices.EndpointVolume
 
 
-def volume_up(step=0.05):
+def volume_up(step=0.50):
     volume = get_volume_interface()
 
     current = volume.GetMasterVolumeLevelScalar()
     volume.SetMasterVolumeLevelScalar(min(1.0, current + step), None)
 
 
-def volume_down(step=0.05):
+def volume_down(step=0.50):
     volume = get_volume_interface()
 
     current = volume.GetMasterVolumeLevelScalar()
@@ -29,8 +30,6 @@ def unmute():
     volume = get_volume_interface()
     volume.SetMute(0, None)
 
-
-import os
 
 
 def shutdown_pc():
