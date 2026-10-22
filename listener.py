@@ -19,13 +19,91 @@ SPEECH_PAD_MS     = 300           # ms of silence before cutting off
 SPEECH_PAD_CHUNKS = int(SPEECH_PAD_MS / (CHUNK_DURATION * 1000))
 MIN_SPEECH_CHUNKS = 8             # ignore clips shorter than ~240ms (noise bursts)
 MAX_RECORD_SEC    = 12            # hard cap per utterance
+MAX_WAIT_SEC      = 10            # return None if NO speech starts (prevents hang)
 WAKE_WORD_MODE    = True          # False = act on every word, no wake word needed
-WAKE_WORDS        = ["javis", "code", "hey michael", "michael", "hello michael"]
+WAKE_WORDS        = ["jarvis", "hey jarvis", "hello jarvis", "javis", "code", "hey michael", "michael", "hello michael"]
 
 # ─── Microphone Device ─────────────────────────────────────────────────────────
-# Device 3 = Microphone Array (Realtek) — your laptop's built-in mic
-# Change to 14 if device 3 doesn't work (same mic, WASAPI mode)
-INPUT_DEVICE = 3
+# Auto-detected: Bluetooth device indices shift on every connect/disconnect,
+# so hardcoded indices always break. Override name with env JARVIS_MIC.
+PREFERRED_MIC = os.environ.get("JARVIS_MIC", "MG-S20")
+_MIC_EXCLUDE = ("stereo mix", "midi", "droidcam", "sound mapper", "primary sound")
+_MIC = {"index": None, "sr": None, "name": None}
+_no_audio_streak = 0
+
+
+def _probe_mic(index):
+    """Open device briefly; return (samplerate, level) or None if unusable."""
+    try:
+        native = int(sd.query_devices(index)["default_samplerate"])
+    except Exception:
+        return None
+    for sr in dict.fromkeys((SAMPLERATE, native)):
+        try:
+            with sd.InputStream(samplerate=sr, channels=1, dtype="float32",
+                                device=index,
+                                blocksize=max(1, int(sr * 0.3))) as s:
+                data, _ = s.read(int(sr * 0.4))
+            level = float(np.sqrt(np.mean(np.asarray(data, dtype=np.float32) ** 2)))
+            return sr, level
+        except Exception:
+            continue
+    return None
+
+
+def _mic_valid(mic):
+    if mic["index"] is None:
+        return False
+    try:
+        return sd.query_devices(mic["index"])["name"] == mic["name"]
+    except Exception:
+        return False
+
+
+def find_mic(force=False):
+    """Pick best input device: preferred name first, then any live mic."""
+    global _MIC
+    if not force and _mic_valid(_MIC):
+        return _MIC
+
+    candidates = []
+    for i, d in enumerate(sd.query_devices()):
+        if d["max_input_channels"] == 0:
+            continue
+        name = d["name"].lower()
+        if any(x in name for x in _MIC_EXCLUDE):
+            continue
+        score = 0
+        if PREFERRED_MIC and PREFERRED_MIC.lower() in d["name"].lower():
+            score += 100
+        if "wasapi" in sd.query_hostapis(d["hostapi"])["name"].lower():
+            score += 10
+        if int(d["default_samplerate"]) == SAMPLERATE:
+            score += 5
+        candidates.append((score, i, d["name"]))
+
+    candidates.sort(reverse=True)
+
+    fallback = None
+    for score, idx, name in candidates:
+        res = _probe_mic(idx)
+        if res is None:
+            continue
+        sr, level = res
+        if fallback is None:
+            fallback = (idx, sr, name, level)
+        if level >= 5e-5:  # live signal
+            _MIC.update(index=idx, sr=sr, name=name)
+            print(f"Mic: {name} (device {idx}, {sr} Hz, level {level:.4f})")
+            return _MIC
+
+    if fallback:
+        _MIC.update(index=fallback[0], sr=fallback[1], name=fallback[2])
+        print(f"Mic: {fallback[2]} (device {fallback[0]}, {fallback[1]} Hz, "
+              f"NO SIGNAL - check it's not muted)")
+        return _MIC
+
+    raise RuntimeError("No usable microphone found")
 
 print("Loading Whisper model...")
 model = whisper.load_model("base")
@@ -60,6 +138,22 @@ HALLUCINATIONS = {
     ".", "..", "...", "the", "", "goodbye", "see you next time",
 }
 
+
+def _is_repetition(text: str) -> bool:
+    """Whisper loops phrases ('i love you. i love you. ...') on noise."""
+    words = text.split()
+    if len(words) < 8:
+        return False
+    # same 3-word (or shorter) phrase dominates the output
+    unit_len = min(3, max(1, len(words) // 10)) or 1
+    units = [" ".join(words[i:i + unit_len])
+             for i in range(len(words) - unit_len + 1)]
+    if not units:
+        return False
+    top = max(units.count(u) for u in set(units))
+    return top * unit_len >= len(words) * 0.6
+
+
 def transcribe(audio: np.ndarray) -> str:
     audio = preprocess(audio)
     # Pass a numpy array (not a file path) — whisper only invokes
@@ -77,6 +171,8 @@ def transcribe(audio: np.ndarray) -> str:
     text = result["text"].strip().lower()
     if text in HALLUCINATIONS or len(text) < 2:
         return ""
+    if _is_repetition(text):
+        return ""
     return text
 
 # ─── Smart VAD Recorder ───────────────────────────────────────────────────────
@@ -93,21 +189,45 @@ def record_utterance() -> np.ndarray | None:
     last_speech_time = None
     started = False
 
-    stream = sd.InputStream(
-        samplerate=SAMPLERATE,
-        channels=1,
-        dtype="float32",
-        blocksize=CHUNK_SIZE,
-        device=INPUT_DEVICE,  # <-- Fix: use the correct microphone
-    )
+    mic = find_mic()
+    dev_sr = mic["sr"]
+    chunk_frames = max(1, int(dev_sr * CHUNK_DURATION))
+
+    try:
+        stream = sd.InputStream(
+            samplerate=dev_sr,
+            channels=1,
+            dtype="float32",
+            blocksize=chunk_frames,
+            device=mic["index"],
+        )
+    except Exception:
+        # device vanished (BT disconnect) — re-detect once and retry
+        mic = find_mic(force=True)
+        dev_sr = mic["sr"]
+        chunk_frames = max(1, int(dev_sr * CHUNK_DURATION))
+        stream = sd.InputStream(
+            samplerate=dev_sr,
+            channels=1,
+            dtype="float32",
+            blocksize=chunk_frames,
+            device=mic["index"],
+        )
 
     with stream:
+        start_time = time.time()
+        peak_seen = 0.0
         while True:
-            chunk, _ = stream.read(CHUNK_SIZE)
+            chunk, _ = stream.read(chunk_frames)
             chunk = chunk.flatten()
+            peak_seen = max(peak_seen, float(np.max(np.abs(chunk))) if chunk.size else 0.0)
 
             speech = is_speech(chunk)
             now = time.time()
+
+            # no speech at all — stop waiting (silent/broken mic)
+            if not started and (now - start_time) >= MAX_WAIT_SEC:
+                break
 
             if speech:
                 last_speech_time = now
@@ -132,9 +252,31 @@ def record_utterance() -> np.ndarray | None:
                 break  # safety cap
 
     if len(speech_chunks) < MIN_SPEECH_CHUNKS:
+        global _no_audio_streak
+        _no_audio_streak += 1
+        # Dead BT endpoint reads exact digital zero (working mic always has
+        # some noise floor) — re-detect on next call; plain silence doesn't.
+        # Also re-detect after several empty recordings in case the preferred
+        # headset reconnected meanwhile (BT endpoints churn constantly).
+        if peak_seen < 1e-6 or _no_audio_streak >= 3:
+            _no_audio_streak = 0
+            _MIC.update(index=None, sr=None, name=None)
         return None
 
-    return np.concatenate(speech_chunks)
+    _no_audio_streak = 0
+
+    audio = np.concatenate(speech_chunks)
+
+    # whisper expects 16 kHz — resample if the device ran at another rate
+    if dev_sr != SAMPLERATE:
+        n = int(round(len(audio) * SAMPLERATE / dev_sr))
+        audio = np.interp(
+            np.linspace(0, len(audio) - 1, n),
+            np.arange(len(audio)),
+            audio,
+        ).astype(np.float32)
+
+    return audio
 
 # ─── Wake word helpers ────────────────────────────────────────────────────────
 
@@ -405,7 +547,8 @@ def main():
     print(f"  Wake mode  : {'ON' if WAKE_WORD_MODE else 'OFF (all speech acted on)'}")
     print(f"  Silence pad: {SPEECH_PAD_MS}ms")
     print(f"  Max record : {MAX_RECORD_SEC}s")
-    print(f"  Mic device : {INPUT_DEVICE} ({sd.query_devices(INPUT_DEVICE)['name']})")
+    _mic = find_mic()
+    print(f"  Mic device : {_mic['index']} ({_mic['name']}, {_mic['sr']} Hz)")
     print(f"  Python     : {sys.version.split()[0]}")
     print("=" * 50)
     print("\nListening...\n")

@@ -1,4 +1,4 @@
-===== Jarvis started Thu 10/22/2026 11:08:33.22 ===== 
+===== Jarvis started Thu 10/22/2026 11:56:32.00 ===== 
 Loading Whisper model...
 Whisper ready
 
@@ -8,3 +8,9 @@ Jarvis V4 Hybrid Started
 Jarvis ready... Listening
 
 [WAITING FOR SPEECH]
+Mic: Headset (MG-S20) (device 21, 16000 Hz, level 0.0099)
+[TRANSCRIBING...]
+RAW TEXT: i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you. i love you.
+
+[WAITING FOR SPEECH]
+Mic: Headset (MG-S20) (device 1, 16000 Hz, NO SIGNAL - check it's not muted)
