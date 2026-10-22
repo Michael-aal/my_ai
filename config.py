@@ -13,7 +13,11 @@ MIC_DURATION = 3
 
 
 import os
-from Encryptor import encrypt, decrypt
+
+try:
+    from Encryptor import encrypt, decrypt
+except ImportError:
+    encrypt = decrypt = None
 
 SECRET_FILE = "storage/.secret"
 
@@ -32,6 +36,8 @@ class SecureConfig:
     # 2. ENCRYPTED FILE STORAGE
     # -------------------------
     def save_encrypted(self, key: str):
+        if encrypt is None:
+            raise RuntimeError("cryptography not installed — cannot encrypt key")
         encrypted = encrypt(key)
 
         os.makedirs("storage", exist_ok=True)
@@ -39,7 +45,7 @@ class SecureConfig:
             f.write(encrypted)
 
     def load_encrypted(self):
-        if not os.path.exists(SECRET_FILE):
+        if decrypt is None or not os.path.exists(SECRET_FILE):
             return None
 
         with open(SECRET_FILE, "rb") as f:

@@ -1,3 +1,3 @@
 def normalize(text):
 
-    return text.lower().strip
+    return text.lower().strip()

@@ -5,6 +5,7 @@ from voice import speak, is_speaking
 from database import set_info, get_info, get_all_info
 from permissions import prompt_first_run
 
+import sys
 import traceback
 
 WAKE_WORD_MODE = True
@@ -30,10 +31,13 @@ def memory_commands(text):
             return "I did not understand"
 
     # RETRIEVE MEMORY
+    # Only claim "what is ..." if we actually have that key —
+    # otherwise fall through to the intent engine (e.g. "what is the date").
     if text.startswith("what is"):
         key = text.replace("what is", "").strip()
         value = get_info(key)
-        return value if value else "No data found"
+        if value:
+            return value
 
     # SHOW ALL MEMORY
     if "show memory" in text:
@@ -123,6 +127,12 @@ def run_assistant():
             if not isinstance(intent, dict) or "intent" not in intent:
                 speak("I could not understand the command")
                 continue
+
+            # ── EXIT ─────────────────────────────
+            if intent.get("intent") == "exit":
+                speak("Goodbye")
+                print("Jarvis stopped.")
+                sys.exit(0)
 
             # ── ACTION ENGINE ─────────────────────
             output = perform_action(intent)

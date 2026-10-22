@@ -62,29 +62,22 @@ HALLUCINATIONS = {
 
 def transcribe(audio: np.ndarray) -> str:
     audio = preprocess(audio)
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
-        wav.write(tmp.name, SAMPLERATE, (audio * 32767).astype(np.int16))
-        path = tmp.name
-    try:
-        result = model.transcribe(
-            path,
-            fp16=False,
-            language="en",
-            temperature=0,
-            no_speech_threshold=0.5,
-            logprob_threshold=-0.8,
-            compression_ratio_threshold=2.4,
-            condition_on_previous_text=False,
-        )
-        text = result["text"].strip().lower()
-        if text in HALLUCINATIONS or len(text) < 2:
-            return ""
-        return text
-    finally:
-        try:
-            os.remove(path)
-        except OSError:
-            pass
+    # Pass a numpy array (not a file path) — whisper only invokes
+    # ffmpeg when given a string path, so this works without ffmpeg.
+    result = model.transcribe(
+        audio.astype(np.float32),
+        fp16=False,
+        language="en",
+        temperature=0,
+        no_speech_threshold=0.5,
+        logprob_threshold=-0.8,
+        compression_ratio_threshold=2.4,
+        condition_on_previous_text=False,
+    )
+    text = result["text"].strip().lower()
+    if text in HALLUCINATIONS or len(text) < 2:
+        return ""
+    return text
 
 # ─── Smart VAD Recorder ───────────────────────────────────────────────────────
 
