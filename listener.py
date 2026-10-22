@@ -20,7 +20,12 @@ SPEECH_PAD_CHUNKS = int(SPEECH_PAD_MS / (CHUNK_DURATION * 1000))
 MIN_SPEECH_CHUNKS = 8             # ignore clips shorter than ~240ms (noise bursts)
 MAX_RECORD_SEC    = 12            # hard cap per utterance
 WAKE_WORD_MODE    = True          # False = act on every word, no wake word needed
-WAKE_WORDS        = ["javis","code", "hey michael", "michael", "hello michael"]
+WAKE_WORDS        = ["javis", "code", "hey michael", "michael", "hello michael"]
+
+# ─── Microphone Device ─────────────────────────────────────────────────────────
+# Device 3 = Microphone Array (Realtek) — your laptop's built-in mic
+# Change to 14 if device 3 doesn't work (same mic, WASAPI mode)
+INPUT_DEVICE = 3
 
 print("Loading Whisper model...")
 model = whisper.load_model("base")
@@ -85,7 +90,8 @@ def transcribe(audio: np.ndarray) -> str:
 
 def record_utterance() -> np.ndarray | None:
     """
-    Streams 30ms chunks. Captures user speech until silence, then waits 5 seconds after the last speech chunk before processing.
+    Streams 30ms chunks. Captures user speech until silence,
+    then waits 3 seconds after the last speech chunk before processing.
     """
     speech_chunks = []
     pre_buffer = collections.deque(maxlen=15)
@@ -99,6 +105,7 @@ def record_utterance() -> np.ndarray | None:
         channels=1,
         dtype="float32",
         blocksize=CHUNK_SIZE,
+        device=INPUT_DEVICE,  # <-- Fix: use the correct microphone
     )
 
     with stream:
@@ -118,14 +125,15 @@ def record_utterance() -> np.ndarray | None:
                     in_speech = True
 
                 speech_chunks.append(chunk)
-                started = True  # we started speaking
+                started = True
 
             else:
                 if in_speech:
                     speech_chunks.append(chunk)
-                    # Check how long it’s been since last speech
-                    if last_speech_time and (now - last_speech_time) >= 3.0:  # 3-second silence timeout
+                    if last_speech_time and (now - last_speech_time) >= 3.0:
                         break
+
+                pre_buffer.append(chunk)
 
             if len(speech_chunks) > int(MAX_RECORD_SEC / CHUNK_DURATION):
                 break  # safety cap
@@ -162,7 +170,6 @@ def _screenshot():
 
     if sys.platform == "darwin":
         os.system(f'screencapture -x "{out}"')
-
     elif sys.platform == "win32":
         ps = (
             "Add-Type -AssemblyName System.Windows.Forms;"
@@ -174,7 +181,6 @@ def _screenshot():
             f'$b.Save("{out}");$g.Dispose();$b.Dispose()'
         )
         os.system(f'powershell -NoProfile -Command "{ps}"')
-
     else:
         if shutil.which("scrot"):
             os.system(f'scrot "{out}"')
@@ -406,6 +412,7 @@ def main():
     print(f"  Wake mode  : {'ON' if WAKE_WORD_MODE else 'OFF (all speech acted on)'}")
     print(f"  Silence pad: {SPEECH_PAD_MS}ms")
     print(f"  Max record : {MAX_RECORD_SEC}s")
+    print(f"  Mic device : {INPUT_DEVICE} ({sd.query_devices(INPUT_DEVICE)['name']})")
     print(f"  Python     : {sys.version.split()[0]}")
     print("=" * 50)
     print("\nListening...\n")
